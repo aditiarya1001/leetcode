@@ -8,6 +8,10 @@ public:
         temp.push_back(n);
         temp.push_back(n);
         sort(nums.begin(), nums.end());
-        return nums == temp;
+        if(nums == temp)
+        {
+            return true;
+        }
+        return false;
     }
 };
