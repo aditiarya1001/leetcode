@@ -14,7 +14,7 @@ public:
         // }
         // return false;
         int n = nums.size()-1;
-        map<int,int>mp;
+        unordered_map<int,int>mp;
         for(int i=1; i<n; i++) mp[i]=1;
         mp[n]=2;
         for(auto &i : nums) 
