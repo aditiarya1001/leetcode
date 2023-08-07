@@ -3,7 +3,7 @@ public:
     int thirdMax(vector<int>& nums) {
         long long firstMax = LLONG_MIN, secondMax = LLONG_MIN, thirdMax = LLONG_MIN;
 
-        for (int num : nums) {
+        for (auto num : nums) {
             if (num > firstMax) {
                 thirdMax = secondMax;
                 secondMax = firstMax;
