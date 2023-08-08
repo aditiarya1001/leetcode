@@ -11,14 +11,15 @@ public:
         }
         if (prefix[1] > money ) 
         {
-            if(prices[0]>money)
-            {
-                return money;
-            }
-            else 
-            {
+//             if(prices[0]>money)
+//             {
+//                 return money;
+//             }
+//             else 
+//             {
+//             return money;
+//             }
             return money;
-            }
             
         } 
         
