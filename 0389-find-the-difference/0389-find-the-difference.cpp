@@ -13,19 +13,31 @@ public:
         // }
         // return t[n]; //koi equal nhi hoga last wla toh hoga hi kunki t mei ek extra h as per                              problem
         
-        unordered_map<char,int>mp;
+//         unordered_map<char,int>mp;
         
-        for(const auto &c : s)
+//         for(const auto &c : s)
+//         {
+//             mp[c]++;
+//         }
+//          for(const auto &c:t) 
+//          {
+//              if(--mp[c]<0) 
+//              {
+//                  return c;
+//              }
+//          }
+//         return '\0';
+        
+        
+        char ret='\0';
+        for(auto &c: s)
         {
-            mp[c]++;
+            ret^=c;
         }
-         for(const auto &c:t) 
-         {
-             if(--mp[c]<0) 
-             {
-                 return c;
-             }
-         }
-        return '\0';
+        for(auto &c: t)
+        {
+            ret^=c;
+        }
+        return ret;
     }
 };
