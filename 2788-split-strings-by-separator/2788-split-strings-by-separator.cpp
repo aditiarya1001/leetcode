@@ -10,7 +10,13 @@ public:
             {
                 if(words[i][j]==separator)
                 {
+                    if(str=="")
+                    {
+                        continue;
+                    }
+                    else{
                     res.push_back(str);
+                    }
                     str="";
                 }
                 else{
@@ -22,14 +28,14 @@ public:
                 res.push_back(str); //to push the last remaining string
             }  
         }
-        for(int i=0;i<res.size();i++)
-        {
-            if(res[i]!="")
-            {
-                ans.push_back(res[i]);
-            }
-        }
-            return ans;
+        // for(int i=0;i<res.size();i++)
+        // {
+        //     if(res[i]!="")
+        //     {
+        //         ans.push_back(res[i]);
+        //     }
+        // }
+            return res;
     }
 
     
