@@ -2,7 +2,7 @@ class Solution {
 public:
     bool isSubsequence(string s, string t) {
         int n = s.size();
-        int i = 0, count = 0;
+        int i = 0;
         int j = 0;
 
         while (i < n && j < t.size()) { // Check if we are within bounds of both strings
